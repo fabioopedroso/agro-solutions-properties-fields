@@ -1,3 +1,5 @@
+using Application.DTOs.Common;
+
 namespace Application.DTOs.Field;
 
 public class CreateFieldDto
@@ -8,10 +10,4 @@ public class CreateFieldDto
     public DateTime? PlantingDate { get; set; }
     public CoordinatesDto Coordinates { get; set; } = null!;
     public int PropertyId { get; set; }
-}
-
-public class CoordinatesDto
-{
-    public double Latitude { get; set; }
-    public double Longitude { get; set; }
 }

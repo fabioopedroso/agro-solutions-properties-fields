@@ -1,4 +1,5 @@
 using Application.Contracts;
+using Application.DTOs.Common;
 using Application.DTOs.Property;
 using Application.Exceptions;
 using Core.Entities;

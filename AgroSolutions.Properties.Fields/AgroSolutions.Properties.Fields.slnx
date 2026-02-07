@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../Application/Application.csproj" />
+  <Project Path="../Core/Core.csproj" />
+  <Project Path="../Intrastructure/Intrastructure.csproj" />
+  <Project Path="AgroSolutions.Properties.Fields.csproj" />
+</Solution>

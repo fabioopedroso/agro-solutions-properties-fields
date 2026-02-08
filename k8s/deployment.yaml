@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: properties-api
-        image: seu-dockerhub/agro-properties:latest
+        image: fabioopedroso/agro-properties:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

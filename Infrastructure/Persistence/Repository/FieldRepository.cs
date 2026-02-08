@@ -39,12 +39,7 @@ public class FieldRepository : IFieldRepository
     {
         field.CreatedAt = DateTime.UtcNow;
         _dbSet.Add(field);
-
-        if (_context.Database.CurrentTransaction != null)
-        {
-            await _context.SaveChangesAsync();
-        }
-
+        await _context.SaveChangesAsync();
         return field;
     }
 

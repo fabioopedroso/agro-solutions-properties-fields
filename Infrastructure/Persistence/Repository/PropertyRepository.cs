@@ -39,12 +39,7 @@ public class PropertyRepository : IPropertyRepository
     {
         property.CreatedAt = DateTime.UtcNow;
         _dbSet.Add(property);
-
-        if (_context.Database.CurrentTransaction != null)
-        {
-            await _context.SaveChangesAsync();
-        }
-
+        await _context.SaveChangesAsync();
         return property;
     }
 

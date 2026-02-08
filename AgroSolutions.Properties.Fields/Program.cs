@@ -96,6 +96,18 @@ app.UseCorrelationMiddleware();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Health check endpoint
+app.MapGet("/health", () => Results.Ok(new
+{
+    status = "healthy",
+    timestamp = DateTime.UtcNow,
+    service = "properties-fields-api"
+}))
+.AllowAnonymous()
+.WithName("HealthCheck")
+.WithTags("Health");
+
 app.MapControllers();
 
 app.Run();

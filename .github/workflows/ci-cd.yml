@@ -30,10 +30,10 @@ jobs:
           ${{ runner.os }}-nuget-
           
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore AgroSolutions.Properties.Fields/AgroSolutions.Properties.Fields.sln
       
     - name: Build solution
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build AgroSolutions.Properties.Fields/AgroSolutions.Properties.Fields.sln --no-restore --configuration Release
       
     - name: Run tests with coverage
       run: dotnet test Tests/Tests.csproj --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage

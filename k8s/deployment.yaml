@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: properties-api
-        image: fabioopedroso/agro-properties:v1
+        image: josehoracio/agro-properties:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -56,6 +56,8 @@ spec:
             secretKeyRef:
               name: agrosolutions-secrets
               key: jwt-audience
+        - name: Observability__OtlpEndpoint
+          value: "http://otel-collector:4317"
         resources:
           requests:
             memory: "128Mi"

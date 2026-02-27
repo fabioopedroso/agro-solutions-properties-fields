@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="../Application/Application.csproj" />
   <Project Path="../Core/Core.csproj" />
-  <Project Path="../Intrastructure/Intrastructure.csproj" />
+  <Project Path="../Infrastructure/Infrastructure.csproj" />
+  <Project Path="../Tests/Tests.csproj" Id="8c8817c7-86d7-46bf-b409-4631c292d8b1" />
   <Project Path="AgroSolutions.Properties.Fields.csproj" />
 </Solution>

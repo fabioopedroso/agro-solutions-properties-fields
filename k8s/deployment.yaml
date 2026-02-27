@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: properties-api
-        image: josehoracio/agro-properties:v2
+        image: fabioopedroso/agro-properties:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
